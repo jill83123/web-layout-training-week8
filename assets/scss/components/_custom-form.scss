@@ -1,0 +1,19 @@
+.form-floating>label {
+    padding: .5rem 1rem;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+    padding: .5rem 1rem;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+    height: calc(2.8rem + 2px);
+}
+
+textarea {
+    min-height: 120px !important;
+    resize: none;
+}

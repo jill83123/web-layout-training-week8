@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <%- include('./layout/navbar'); -%>
+    </header>
+    <main>
+        <section class="gradient-radiation text-light">
+            <div class="container pt-15 pb-20 py-lg-40">
+                <h2 class="fs-20 fs-md-32 fw-bolder ls-100 mb-10 mb-lg-4">聯絡我們</h2>
+                <div class="row justify-content-evenly flex-column flex-lg-row">
+                    <div class="col-lg-6 mb-15 mb-lg-0">
+                        <p class="mb-8 mb-lg-16">您的意見與需求對我們至關重要！如果您對 ALPHABOX+ 有任何疑問、建議或需求，請隨時填寫以下表單，我們將在 24
+                            小時內回覆您。您的寶貴意見將幫助我們不斷改進產品與服務，為您帶來更優質的體驗。</p>
+                        <p class="mb-8 mb-lg-16">我們期待您的來信與來電，竭誠為您解答。讓我們攜手共創更美好的未來！</p>
+                        <form action="#">
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control" id="inputName" name="inputName" placeholder="">
+                                <label for="inputEmail" class="text-primary">姓名</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="email" class="form-control" id="inputEmail" name="inputEmail"
+                                    placeholder="">
+                                <label for="inputEmail" class="text-primary">EMAIL</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="tel" class="form-control" id="inputTel" name="inputTel" placeholder="">
+                                <label for="inputEmail" class="text-primary">聯絡電話</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="inputComment"
+                                    name="inputComment"></textarea>
+                                <label for="inputComment" class="text-primary">COMMENTS</label>
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100">
+                                <i class="material-symbols-outlined align-bottom me-1">point_scan</i>訂閱</button>
+                        </form>
+                    </div>
+                    <ul class="col-lg-3">
+                        <li class="mb-10">
+                            <h3 class="opacity-50 fw-normal">客服時間</h3>
+                            <p class="fw-light">週一至週五 09:00-18:00</p>
+                        </li>
+                        <li class="mb-10">
+                            <h3 class="opacity-50 fw-normal">聯絡地址</h3>
+                            <p class="fw-light">高雄市新興區民生一路 56 號</p>
+                        </li>
+                        <li class="mb-10">
+                            <h3 class="opacity-50 fw-normal">聯絡地址</h3>
+                            <a href="tel:+" class="d-block fw-light">+886-2-12345678</a>
+                            <a href="mailto:" class="d-block fw-light">mailto:customer@alphabox.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-1">
+                <ul class="container d-flex justify-content-end py-8 column-gap-19 flex-column flex-md-row">
+                    <li><a href="#" class="fw-light py-4">INSTAGRAM</a></li>
+                    <li><a href="#" class="fw-light py-4">FACEBOOK</a></li>
+                    <li><a href="#" class="fw-light py-4">TWITTER</a></li>
+                    <li><a href="#" class="fw-light py-4">LINKEDIN</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="pt-15 pt-lg-40 pb-lg-30 contact-us-product">
+            <div class="container">
+                <h2 class="fs-20 fs-lg-32 fw-bold ls-100 mb-4 mb-lg-6">選擇自己要的角色</h2>
+                <h3 class="fs-12 fs-lg-24 mb-6 mb-lg-20 fw-bolder"><span
+                        class="text-secondary me-2">20K+</span>使用者喜歡我們的服務</h3>
+            </div>
+            <ul class="text-light">
+                <li class="position-relative">
+                    <a href="product-diane.html">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="../assets/images/mobile/diane_choose.png">
+                            <img src="../assets/images/horizontal/diane_horizontal.png" alt="diane">
+                        </picture>
+                        <p class="special-font position-absolute top-50 translate-middle-y fs-20 fs-sm-24 fs-lg-32 text-end">
+                            Diane</p>
+                    </a>
+                </li>
+                <li class="text-end position-relative">
+                    <a href="product-felix.html">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="../assets/images/mobile/felix_choose.png">
+                            <img src="../assets/images/horizontal/felix_horizontal.png" alt="felix">
+                        </picture>
+                        <p
+                            class="special-font position-absolute top-50 end-0 translate-middle-y fs-20 fs-sm-24 fs-lg-32 text-start">
+                            Felix
+                        </p>
+                    </a>
+                </li>
+                <li class="position-relative">
+                    <a href="product-karina.html">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="../assets/images/mobile/karina_choose.png">
+                            <img src="../assets/images/horizontal/karina_horizontal.png" alt="karina">
+                        </picture>
+                        <p class="special-font position-absolute top-50 translate-middle-y fs-20 fs-sm-24 fs-lg-32 text-end">
+                            Karina</p>
+                    </a>
+                </li>
+                <li class="text-end position-relative">
+                    <a href="product-vito.html">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="../assets/images/mobile/vito_choose.png">
+                            <img src="../assets/images/horizontal/vito_horizontal.png" alt="vito">
+                        </picture>
+                        <p
+                            class="special-font position-absolute top-50 end-0 translate-middle-y fs-20 fs-sm-24 fs-lg-32 text-start">
+                            Vito
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+</body>
+
+</html>

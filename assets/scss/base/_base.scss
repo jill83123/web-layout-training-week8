@@ -1,0 +1,24 @@
+a{
+    display: inline-block;
+}
+
+ul, li, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 ,p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{
+    font-weight: bold;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}

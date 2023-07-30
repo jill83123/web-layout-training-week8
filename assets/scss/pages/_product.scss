@@ -1,0 +1,76 @@
+.product-nav-link:hover {
+    color: #7000FF;
+}
+
+.brand-circle-down {
+    z-index: 2;
+    bottom: 7%;
+    animation: down 1.3s linear infinite;
+}
+
+.product-point li {
+    transition: .5s;
+    border-bottom: 1px solid transparent;
+
+    h3 {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background-color: $black;
+        }
+    }
+
+    &:hover h3::after {
+        width: 100%;
+        height: 2px;
+        transition: .8s;
+    }
+}
+
+@include xs {
+    .brand-circle-down {
+        max-width: 109px;
+        bottom: 10%;
+    }
+}
+
+@include lg {
+    .brand-circle-down {
+        max-width: 130px;
+        bottom: 3%;
+    }
+}
+
+@include xl {
+    .brand-circle-down {
+        max-width: 150px;
+    }
+}
+
+@include xxl {
+    .brand-circle-down {
+        max-width: 100%;
+    }
+}
+
+@keyframes down {
+    0% {
+        margin-bottom: 2%;
+        transform: translate(-50%, -2%);
+    }
+
+    50% {
+        margin-bottom: 1%;
+        transform: translate(-50%, 2%);
+    }
+
+    100% {
+        margin-bottom: 2%;
+        transform: translate(-50%, -2%);
+    }
+}

@@ -1,0 +1,58 @@
+@mixin hover-move-arrow {
+    .arrow {
+        transition: .5s;
+    }
+
+    &:hover .arrow {
+        transform: translateX(15px);
+    }
+}
+
+/* container */
+.container-fluid {
+    --bs-gutter-x: 8rem !important;
+
+    @media (max-width: 991px) {
+        --bs-gutter-x: 6rem !important;
+    }
+
+    @media (max-width: 575px) {
+        --bs-gutter-x: 2rem !important;
+    }
+}
+
+@mixin xxl{
+    @media (min-width: 1400px) {
+        @content
+    }
+}
+
+@mixin xl{
+    @media (min-width: 1200px) {
+        @content
+    }
+}
+
+@mixin lg{
+    @media (min-width: 992px) {
+        @content
+    }
+}
+
+@mixin md{
+    @media (min-width: 768px) {
+        @content
+    }
+}
+
+@mixin sm{
+    @media (min-width: 576px) {
+        @content
+    }
+}
+
+@mixin xs{
+    @media (min-width: 375px) {
+        @content
+    }
+}

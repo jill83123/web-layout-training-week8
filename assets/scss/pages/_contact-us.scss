@@ -1,0 +1,31 @@
+.contact-us-product {
+    img {
+        width: 73%;
+    }
+
+    p {
+        width: 26.6666%;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-us-product {
+        img {
+            width: 100%;
+        }
+
+        p {
+            width: auto;
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+        }
+    }
+}
+
+.vacancies-btn {
+    --bs-btn-hover-color: $white;
+    --bs-btn-hover-bg: #7000FF;
+    --bs-btn-hover-border-color: #7000FF;
+}

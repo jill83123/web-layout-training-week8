@@ -1,0 +1,84 @@
+.brand-circle {
+  max-width: 196px;
+}
+
+/* 動畫 */
+@keyframes to-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.to-rotate {
+  animation: to-rotate 30s linear infinite;
+}
+
+/* hover */
+.hover-scale {
+  transition: .5s;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
+
+.hover-move {
+  transition: .5s;
+
+  &:hover {
+    transform: translateX(15px);
+  }
+}
+
+/* border breakpoint */
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix}-top {
+      border-top: $border-width solid $border-color;
+    }
+
+    .border#{$infix}-end {
+      border-right: $border-width solid $border-color;
+    }
+
+    .border#{$infix}-bottom {
+      border-bottom: $border-width solid $border-color;
+    }
+
+    .border#{$infix}-start {
+      border-left: $border-width solid $border-color;
+    }
+
+    .border#{$infix}-top-0 {
+      border-top: 0 !important;
+    }
+
+    .border#{$infix}-end-0 {
+      border-right: 0 !important;
+    }
+
+    .border#{$infix}-bottom-0 {
+      border-bottom: 0 !important;
+    }
+
+    .border#{$infix}-start-0 {
+      border-left: 0 !important;
+    }
+
+    .border#{$infix}-x {
+      border-left: $border-width solid $border-color !important;
+      border-right: $border-width solid $border-color !important;
+    }
+
+    .border#{$infix}-y {
+      border-top: $border-width solid $border-color !important;
+      border-bottom: $border-width solid $border-color !important;
+    }
+  }
+}

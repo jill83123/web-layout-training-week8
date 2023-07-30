@@ -1,0 +1,19 @@
+/* index */
+.gradient-primary-linear {
+    background-image: linear-gradient(90deg, #7000FF 1.22%, #11002D 116.05%);
+}
+.gradient-primary-linear-reverse {
+    background-image: linear-gradient(180deg, #11002D 100%, #7000FF 0%);
+}
+
+.gradient-radiation {
+    background-image: radial-gradient(circle at center, #28085C 0%, #000000 100%);
+}
+.gradient-radiation-reverse {
+    background-image: radial-gradient(circle at center, #000000 0%, #28085C 100%);
+}
+
+/* nav */
+.gradient-secondary {
+    background: linear-gradient(180deg, #7000FF 0%, #11002D 100%);
+}

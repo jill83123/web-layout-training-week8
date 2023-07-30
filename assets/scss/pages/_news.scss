@@ -1,0 +1,10 @@
+.news {
+    li {
+        @include hover-move-arrow;
+    }
+
+    .pagination .active {
+        text-decoration: underline;
+        text-underline-offset: .3em;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <%- include('./layout/navbar'); -%>
+    </header>
+    <main>
+        <section class="gradient-radiation text-light pt-15 pb-20 pb-lg-40">
+            <div class="container">
+                <div class="row flex-column flex-lg-row">
+                    <h2 class="col-lg-3 col-xl-4 fs-20 fs-lg-24 fs-xl-32 fw-bolder ls-100 pt-lg-24">登入</h2>
+                    <div class="col-lg-6 col-xl-4">
+                        <img src="../assets/images/circle.png" alt="brand-circle"
+                            class="brand-circle to-rotate mb-6 d-block mx-auto to-rotate">
+                        <h3 class="special-font mb-8 fs-16 text-center">ALPHABOX+</h3>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-pill w-100 mb-6 d-flex align-items-center justify-content-center">
+                            <img src="../assets/images/apple_icon.png" alt="apple_icon" class="me-2">Continue with
+                            Apple</a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-pill w-100 mb-6 d-flex align-items-center justify-content-center">
+                            <img src="../assets/images/google_icon.png" alt="google_icon" class="me-2">Continue with
+                            Google</a>
+                        <p class="or-dividing-line position-relative mb-6 text-center">or</p>
+                        <form action="#">
+                            <div class="form-floating mb-4">
+                                <input type="email" class="form-control" id="inputEmail" name="inputEmail"
+                                    placeholder="">
+                                <label for="inputEmail" class="text-primary">EMAIL</label>
+                            </div>
+                            <div class="form-floating mb-6">
+                                <input type="password" class="form-control" id="inputPassword" name="inputPassword"
+                                    placeholder="">
+                                <label for="inputEmail" class="text-primary">密碼</label>
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100 mb-2">
+                                <i class="material-symbols-outlined align-bottom me-1">point_scan</i>建立帳號</button>
+                            <p class="text-end"><a href="login.html" class="text-decoration-underline link-offset-2">忘記密碼</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+</body>
+
+</html>
