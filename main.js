@@ -35,7 +35,7 @@ function checkScreenWidth() {
             mySwiper.disable();
         }
     } else {
-        // 啟用
+        //啟用
         if (!mySwiper) {
             var swiper = new Swiper(".index-use-swiper", {
                 slidesPerView: 'auto',
@@ -52,7 +52,7 @@ function checkScreenWidth() {
     }
 }
 
-// 頁面加載時和屏幕寬度變化時調用檢查函數
+//頁面加載時和屏幕寬度變化時調用檢查函數
 var mediaQuery = window.matchMedia('(max-width: 992px)');
 mediaQuery.addListener(checkScreenWidth);
 
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const collapseIconOff = button.querySelector('.btn-off');
 
         button.addEventListener('click', function () {
-            // 切換圖標的顯示狀態
+            //切換圖標的顯示狀態
             collapseIconOn.style.display = (collapseIconOn.style.display === 'none') ? 'inline-block' : 'none';
             collapseIconOff.style.display = (collapseIconOff.style.display === 'none') ? 'inline-block' : 'none';
         });
